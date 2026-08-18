@@ -26,7 +26,7 @@ It is useful when you want a more visual, playful way to navigate a dense Arrang
 This Extension currently requires:
 
 - **Ableton Live 12 Suite Beta 12.4.5 or later**
-- macOS or Windows
+- The packaged .ablx may work on Windows, but it has not yet been tested
 - The packaged extension file: `randomize-clip-names-1.1.0.ablx`
 
 > [!IMPORTANT]
