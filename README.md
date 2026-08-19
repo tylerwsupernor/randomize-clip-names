@@ -32,6 +32,23 @@ This Extension currently requires:
 > [!IMPORTANT]
 > Ableton Extensions are currently part of Ableton Live's public beta workflow. They do not work in Live Standard, Intro, Lite, or earlier Live versions. You do **not** need the Ableton Extensions SDK or Node.js just to install and use the `.ablx` file. [Ableton Extensions FAQ](https://help.ableton.com/hc/en-us/articles/27303428331420-Ableton-Extensions-FAQ)
 
+
+## More on Ableton Extensions
+
+Want to learn more about what Ableton Extensions are or how to build your own?
+
+- [Read about Extensions on Ableton.com](https://www.ableton.com/en/live/extensions)
+- [Explore the Extension SDK](https://ableton.github.io/extensions-sdk)
+- [Join Ableton’s Discord](https://discord.gg/ableton) to connect with other users and developers
+
+
+## Disclaimer
+
+This project was developed with help from AI tools, which assisted with parts of the code, troubleshooting, and documentation. I remain responsible for the design, testing, and final decisions, but it may not be written in the most elegant way.
+
+If AI-assisted development isn’t your thing, no hard feelings at all. Thanks for giving it a look anyway.
+
+
 ## Installation
 
 1. Download `randomize-clip-names-1.1.0.ablx` from this repository's [Releases](../../releases) page.
@@ -182,6 +199,6 @@ MIT License. See [`LICENSE`](LICENSE) for details.
 
 ## Credits
 
-Built by Tyler William Supernor with the [Ableton Extensions SDK](https://ableton.github.io/extensions-sdk/).
+Built by Tyler W. Supernor with the [Ableton Extensions SDK](https://ableton.github.io/extensions-sdk/).
 
 Ableton Live is a trademark of Ableton AG. This project is an independent community tool and is not affiliated with or endorsed by Ableton AG.
