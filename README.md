@@ -183,7 +183,7 @@ Development requires the Ableton Extensions SDK, Node.js, and a compatible Ablet
 ### v1.2.0
 
 - Fixed a bug where every clip on the selected tracks was renamed, even clips outside the highlighted time range. Only clips overlapping the selection are renamed now, as documented
-- Replaced per-track guesswork with a single track lookup, so selecting a Return or Group track lane no longer aborts the run halfway through
+- Replaced per-track type guesswork with a single track lookup through the shared Track base class
 - Split the code into modules and hardened input validation
 - Naming behavior is unchanged: same word banks, same crypto-strong random picks, still no duplicates within one rename pass
 
