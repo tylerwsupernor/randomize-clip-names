@@ -27,7 +27,7 @@ This Extension currently requires:
 
 - **Ableton Live 12 Suite Beta 12.4.5 or later**
 - The packaged .ablx may work on Windows, but it has not yet been tested
-- The packaged extension file: `randomize-clip-names-1.1.0.ablx`
+- The packaged extension file: `randomize-clip-names-1.2.0.ablx`
 
 > [!IMPORTANT]
 > Ableton Extensions are currently part of Ableton Live's public beta workflow. They do not work in Live Standard, Intro, Lite, or earlier Live versions. You do **not** need the Ableton Extensions SDK or Node.js just to install and use the `.ablx` file. [Ableton Extensions FAQ](https://help.ableton.com/hc/en-us/articles/27303428331420-Ableton-Extensions-FAQ)
@@ -51,13 +51,13 @@ If AI-assisted development isn’t your thing, no hard feelings at all. Thanks f
 
 ## Installation
 
-1. Download `randomize-clip-names-1.1.0.ablx` from this repository's [Releases](../../releases) page.
+1. Download `randomize-clip-names-1.2.0.ablx` from this repository's [Releases](../../releases) page.
 2. Open **Ableton Live 12 Suite Beta**.
 3. Open **Settings/Preferences**:
    - macOS: press `Cmd + ,`
    - Windows: open **Options → Preferences**
 4. Select **Extensions**.
-5. Drag `randomize-clip-names-1.1.0.ablx` into the Extensions settings page.
+5. Drag `randomize-clip-names-1.2.0.ablx` into the Extensions settings page.
 6. Restart Live when prompted.
 
 For normal use of the installed `.ablx`, make sure **Developer Mode is turned off**.
@@ -111,7 +111,7 @@ Press:
 
 ## Naming Behavior
 
-Version 1.1.0 uses three large word banks:
+Version 1.2.0 uses three large word banks:
 
 1. **Descriptors** — e.g. `Velvet`, `Glacial`, `Iridescent`
 2. **Objects / musical concepts** — e.g. `Meteor`, `Resonance`, `Sprocket`
@@ -153,7 +153,7 @@ Extensions are context-sensitive: Live only shows them when the selected item ma
 
 ### I installed it but an older version appears to run
 
-Remove the old version from **Settings/Preferences → Extensions**, install `randomize-clip-names-1.1.0.ablx`, then restart Live.
+Remove the old version from **Settings/Preferences → Extensions**, install `randomize-clip-names-1.2.0.ablx`, then restart Live.
 
 ### Can I use this in Live Standard, Intro, or Lite?
 
@@ -179,6 +179,13 @@ This produces an `.ablx` file in the project folder.
 Development requires the Ableton Extensions SDK, Node.js, and a compatible Ableton Live 12 Suite Beta installation. See the [official Ableton Extensions SDK documentation](https://ableton.github.io/extensions-sdk/).
 
 ## Version History
+
+### v1.2.0
+
+- Fixed a bug where every clip on the selected tracks was renamed, even clips outside the highlighted time range. Only clips overlapping the selection are renamed now, as documented
+- Replaced per-track guesswork with a single track lookup, so selecting a Return or Group track lane no longer aborts the run halfway through
+- Split the code into modules and hardened input validation
+- Naming behavior is unchanged: same word banks, same crypto-strong random picks, still no duplicates within one rename pass
 
 ### v1.1.0
 
